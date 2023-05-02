@@ -12,7 +12,9 @@ def test_data_get():
 def test_data_slice():
     return [[[1, 2, 3, 4], 1, 3, [2, 3]],
             [[1, 2, 3], 1, None, [2, 3]],
-            [[1, 2, 3], -115, None, [1, 2, 3]]]
+            [[1, 2, 3], -1, None, [3]],
+            [[1, 2, 3], -115, 2, [1, 2]]]
+
 
 def test_get(test_data_get):
     for data_item in test_data_get:
